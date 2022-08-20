@@ -1,8 +1,7 @@
 body {background-color: black;}
 #wrapper {
-   width: 43%;
+   width: 500px;
    margin: 50px auto;
-   padding: 30px;
    color: aliceblue;
 }
 .accordion__title{
@@ -13,7 +12,6 @@ body {background-color: black;}
 }
 
 .accordion__content {
-   width: 400px;
    position: relative;
    background: rgb(36,11,0);
    background: linear-gradient(29deg, rgba(36,11,0,0.6237088585434174) 0%, rgba(207,139,46,0.8982186624649859) 27%, rgba(174,151,108,1) 62%, rgba(255,173,0,1) 100%);
