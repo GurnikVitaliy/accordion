@@ -1,0 +1,32 @@
+#wrapper {
+   width: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 200px auto;
+}
+.accardion__title {
+   width: 300px;
+   padding: 5px;
+   background-color: bisque;
+   margin-bottom: 2px;
+}
+.accardion__content {
+   width: 310px;
+   background-color: black;
+   color: aliceblue;
+   position: relative;
+   height: 0;
+   transition: 1s all;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   overflow: hidden;
+   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.accardion__item.active .accardion__content {
+   height: 100px;;
+}
