@@ -1,4 +1,4 @@
-/* body {background-color: black;} */
+body{ background-color: black;}
 #wrapper {
    width: auto;
    display: flex;
@@ -30,4 +30,7 @@
 
 .accardion__item.active .accardion__content {
    height: 100px;;
+}
+.accardion__content.active {
+   height: 200px;
 }
