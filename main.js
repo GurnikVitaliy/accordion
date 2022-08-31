@@ -17,3 +17,17 @@ sunyBtn.addEventListener('click', function() {
 btnDark.addEventListener('click', function() {
     body.classList.remove('active');
 });
+
+let date = new Date(),
+    time = date.getHours();
+
+    
+if(time >= 0 && time <= 6) {
+    document.getElementById('time').innerHTML = 'Доброе утро';
+} else if(time >= 11 && time <= 16) {
+    document.getElementById('time').innerHTML = 'Дорый день';
+} else if(time >= 17 && time <= 20) {
+    document.getElementById('time').innerHTML = 'Добрый вечер';
+} else {
+    document.getElementById('time').innerHTML = 'Доброй ночи';
+}
