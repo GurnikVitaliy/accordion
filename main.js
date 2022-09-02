@@ -31,3 +31,19 @@ if(time >= 0 && time <= 6) {
 } else {
     document.getElementById('time').innerHTML = 'Доброй ночи';
 }
+
+let likeBtn = document.getElementById('like');
+
+function counter() { 
+let c = document.getElementById('count');
+        let count = 0;
+        return function f() {
+            count++;
+            c.innerHTML = count;
+        }
+}
+
+let res = counter();
+likeBtn.addEventListener('click', function() {
+    res();
+});
