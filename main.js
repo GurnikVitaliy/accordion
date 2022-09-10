@@ -54,8 +54,9 @@ function lookTime() {
     let hours = date.getHours();
     let mimuts = date.getMinutes();
     let seconds = date.getSeconds();
-    if(seconds < 10) {
+    if(seconds < 10 && mimuts < 10) {
         seconds = '0' + seconds; 
+        mimuts = '0' + mimuts; 
     }
     time.innerHTML = hours + ':' + mimuts + ':' + seconds;
 }
