@@ -47,3 +47,16 @@ let res = counter();
 likeBtn.addEventListener('click', function() {
     res();
 });
+
+function lookTime() {
+   let time = document.querySelector('.time')
+    let date = new Date();
+    let hours = date.getHours();
+    let mimuts = date.getMinutes();
+    let seconds = date.getSeconds();
+    if(seconds < 10) {
+        seconds = '0' + seconds; 
+    }
+    time.innerHTML = hours + ':' + mimuts + ':' + seconds;
+}
+setInterval(lookTime, 1000);
