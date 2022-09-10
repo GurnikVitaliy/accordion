@@ -63,6 +63,10 @@ img { width: 50px; }
       width: 300px;
    }
 }
+.time {
+   text-align: center;
+   margin-bottom: 50px;
+}
 @media screen and  (min-width: 820px) {
    .block__title {
       width: 700px;
